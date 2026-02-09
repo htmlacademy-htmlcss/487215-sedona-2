@@ -5,7 +5,7 @@
     <title>Sedona_OlgaArbuzova Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260209121238">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260209185131">
   </head>
   <body class="wrapper">
     <header class="header"><a href="index.html"><img class="header__logo" src="static/images/beauty/header/logo.svg" alt="Логотип компании Sedona"></a>
@@ -71,8 +71,8 @@
               </p>
             </div>
             <div class="form-choise__button-wrapper">
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button form-choise__button" type="submit">Применить</button>
+              <button class="form-choise__button--reset" type="reset">Сбросить</button>
             </div>
           </div>
         </form>
@@ -129,13 +129,15 @@
         </ul>
       </section>
       <section class="pagination">
-        <h2 class="pagination__titlevisually-hidden">Блок постраничной навигации</h2>
+        <h2 class="pagination__title visually-hidden">Блок постраничной навигации</h2>
         <ul class="pagination__list">
-          <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+          <li class="pagination__item pagination__item--current"><a class="pagination__link" href="#">1</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-          <li class="pagination__item"><span>...</span></li>
+          <li class="pagination__item pagination__item--dots">
+            <p class="pagination__dots">...</p>
+          </li>
           <li class="pagination__item" href="#"><a class="pagination__link" href="#">10</a></li>
         </ul>
       </section>
