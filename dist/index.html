@@ -5,9 +5,9 @@
     <title>Sedona_OlgaArbuzova Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260202205327">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260209121238">
   </head>
-  <body>
+  <body class="wrapper">
     <header class="header"><a href="index.html"><img class="header__logo" src="static/images/beauty/header/logo.svg" alt="Логотип компании Sedona"></a>
       <nav class="header__main-menu">
         <ul class="header__menu menu-header">
@@ -15,31 +15,32 @@
           <li class="menu-header__item"><a class="menu-header__link" href="#">О Седоне</a></li>
           <li class="menu-header__item"><a class="menu-header__link" href="catalog.html">Гостиницы</a></li>
         </ul>
-        <ul class="header__personal personal-header">
-          <li class="personal-header__search"><span class="vaisually-hidden">Поиск</span><a href="#"></a></li>
-          <li class="personal-header__favorite"><span class="vaisually-hidden">Количество гостиниц в избранном:</span><span>12</span><a href="#"></a></li>
-          <li><a class="personal-header__active-button" href="#">Хочу сюда!</a></li>
-        </ul>
       </nav>
+      <ul class="header__personal personal-header">
+        <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
+        <li class="personal-header__item personal-header__item--favorite"><span class="visually-hidden">Количество гостиниц в избранном:</span><span class="personal-header__count"></span><a class="personal-header__favorite-link" href="#"></a></li>
+        <li class="personal-header__item"><a class="personal-header__active-button button" href="#">Хочу сюда!</a></li>
+      </ul>
     </header>
     <main class="main-index">
-      <h1 class="vusually-hidden">Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
       <section class="about">
         <h2 class="about__title visually-hidden">О Седоне</h2>
-        <div class="about__present present"><img class="present__img" src="static/images/content/index/welcome.svg" alt="Надпись Добро пожаловать в Седону на фоне картинка живописной скалистой местности">
-          <div class="present__helpers-background"></div>
+        <div class="about__present present"><img class="present__img" src="static/images/content/index/welcome.svg" alt="Надпись Добро пожаловать в Седону на фоне картинка живописной скалистой местности"></div>
+        <div class="about__inner-wrapper">
+          <h3 class="about__subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="about__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
-        <h3 class="about__subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p class="about__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="benefits">
         <h2 class="benefits__title visually-hidden">Преимущества</h2>
         <ul class="benefits__list benefit">
           <li class="benefit__item benefit__item--blue">
-            <h3 class="benefit__title">Настоящий городок</h3>
-            <p class="benefit__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="benefit__inner-wrapper">
+              <h3 class="benefit__title">Настоящий городок</h3>
+              <p class="benefit__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div><picture><source srcset="static/images/content/index/benefits/photo-1.webp" type="image/webp"><img class="benefit__img" src="static/images/content/index/benefits/photo-1.jpg" alt="Дом с флагами Америки на фоне дерева"></picture>
           </li>
-          <li class="benefit__item benefit__img"><picture><source srcset="static/images/content/index/benefits/photo-1.webp" type="image/webp"><img src="static/images/content/index/benefits/photo-1.jpg" alt="Дом с флагами Америки на фоне дерева"></picture></li>
           <li class="benefit__item">
             <h3 class="benefit__title">Небольшая площадь</h3>
             <p class="benefit__description">Все достопримечательности находятся очень близко</p>
@@ -52,19 +53,22 @@
             <h3 class="benefit__title">Мало туристов</h3>
             <p class="benefit__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="benefit__item benefit__img"><picture><source srcset="static/images/content/index/benefits/photo-2.webp" type="image/webp"><img src="static/images/content/index/benefits/photo-2.jpg" alt="Красивый горный пейзаж Седоны"></picture></li>
-          <li class="benefit__item benefit__item--blue">
-            <h3 class="benefit__title">Там есть мост дьявола</h3>
-            <p class="benefit__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="benefit__item benefit__img benefit__item--blue"><picture><source srcset="static/images/content/index/benefits/photo-2.webp" type="image/webp"><img class="benefit__img" src="static/images/content/index/benefits/photo-2.jpg" alt="Красивый горный пейзаж Седоны"></picture>
+            <div class="benefit__inner-wrapper">
+              <h3 class="benefit__title">Там есть мост дьявола</h3>
+              <p class="benefit__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </li>
         </ul>
-        <h3 class="benefits__subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
-        <p class="benefits__description">Опытный персонал и качественное обслуживание!</p>
+        <div class="benefits__inner-wrapper">
+          <h3 class="benefits__subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
+          <p class="benefits__description">Опытный персонал и качественное обслуживание!</p>
+        </div>
       </section>
       <section class="features">
         <h2 class="features__title visually-hidden">Особенности отдыха в Седоне</h2>
         <ul class="features__list feature">
-          <li class="feature__item">
+          <li class="feature__item feature__item--light-blue">
             <div class="feature__icon feature__icon--house"></div>
             <h3 class="feature__title">Жильё</h3>
             <p class="feature__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -74,7 +78,7 @@
             <h3 class="feature__title">Еда</h3>
             <p class="feature__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="feature__item">
+          <li class="feature__item feature__item--light-blue">
             <div class="feature__icon feature__icon--gift"></div>
             <h3 class="feature__title">Сувениры</h3>
             <p class="feature__text">Не только китайского, но и настоящего местного производства!</p>
@@ -83,25 +87,27 @@
       </section>
       <section class="action">
         <h2 class="action__title">Заинтересовались?</h2>
-        <p class="action__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p><a class="action__link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <p class="action__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p><a class="action__link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" placeholder="Ваш e-mail" name="subscribe-email">
-          <button class="subscribe__btn" type="submit">Подписаться</button>
-        </form>
-      </section>
+      <div class="inner-wrapper">
+        <section class="subscribe">
+          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+          <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" placeholder="Ваш e-mail" name="subscribe-email">
+            <button class="subscribe__btn button" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <ul class="footer__socials socials">
         <li class="socials__item socials__item--vk"><a href="https://vk.com/htmlacademy" target="blank">
-            <div class="socials__icon socials__icon--vk"></div></a></li>
+            <div class="socials__icon socials__icon--vk"></div><span class="visually-hidden">Ссылка Вконтакте</span></a></li>
         <li class="socials__item socials__item--tg"><a href="https://t.me/htmlacademy" target="blank">
-            <div class="socials__icon socials__icon--tg"></div></a></li>
+            <div class="socials__icon socials__icon--tg"></div><span class="visually-hidden">Ссылка Телеграмм</span></a></li>
         <li class="socials__item socials__item--yt"><a href="https://www.youtube.com/user/htmlacademyru" target="blank" title="Ссылка Youtube">
-            <div class="socials__icon socials__icon--yt"></div></a></li>
+            <div class="socials__icon socials__icon--yt"></div><span class="visually-hidden">Ссылка YouTube</span></a></li>
       </ul>
       <adress class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></adress>
       <adress class="footer__autor"><a href="https://htmlacademy.ru/"><picture><source srcset="static/images/beauty/footer/logo-htmlacademy.webp" type="image/webp"><img src="static/images/beauty/footer/logo-htmlacademy.png" alt="Логотип автора проекта - html academy"></picture></a></adress>
