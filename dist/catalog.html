@@ -5,7 +5,7 @@
     <title>Sedona_OlgaArbuzova Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260217140500">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260219002949">
   </head>
   <body class="wrapper">
     <header class="header"><a href="index.html"><img class="header__logo" src="static/images/beauty/header/logo.svg" alt="Логотип компании Sedona"></a>
@@ -94,37 +94,49 @@
       <section class="gallery">
         <h2 class="gallery__title visually-hidden">Галерея найденных по фильтру гостиниц</h2>
         <ul class="gallery__list">
-          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-1.webp" type="image/webp"><img src="static/images/content/catalog/hotel-1.jpg" alt="Amara Resort &amp; Spa"></picture>
+          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-1.webp" type="image/webp"><img class="total__img" src="static/images/content/catalog/hotel-1.jpg" alt="Amara Resort &amp; Spa"></picture>
             <div class="total__inner-wrap">
               <h3 class="total__title">Amara Resort & Spa</h3>
               <p class="total__price"><span>Гостиница</span><span>от 4000</span></p><a class="total__link total__link--more button" href="#">Подробнее</a>
               <button class="button total__link total__link--favorite" type="button">В избранное</button>
             </div>
-            <p class="total__raiting raiting"><span class="visually-hidden">4 звезды</span><span>Рейтинг:</span><span class="raiting__count">8,5</span></p>
+            <div class="total__raiting raiting">
+              <div class="raiting__stars"><span class="visually-hidden">4 звезды</span></div>
+              <div class="raiting__count"><span>Рейтинг:</span><span class="raiting__count">8,5</span></div>
+            </div>
           </li>
-          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-2.webp" type="image/webp"><img src="static/images/content/catalog/hotel-2.jpg" alt="Villas at Poco Diablo"></picture>
+          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-2.webp" type="image/webp"><img class="total__img" src="static/images/content/catalog/hotel-2.jpg" alt="Villas at Poco Diablo"></picture>
             <div class="total__inner-wrap">
               <h3 class="total__title">Villas at Poco Diablo</h3>
               <p class="total__price"><span>Гостиница</span><span>от 5000</span></p><a class="total__link total__link--more button" href="#">Подробнее</a>
               <button class="button total__link total__link--favorite total__link--current" type="button">В избранном</button>
             </div>
-            <p class="total__raiting raiting"><span class="visually-hidden">4 звезды</span><span>Рейтинг:</span><span class="raiting__count">9,2</span></p>
+            <div class="total__raiting raiting">
+              <div class="raiting__stars"><span class="visually-hidden">4 звезды</span></div>
+              <div class="raiting__count"><span>Рейтинг:</span><span class="raiting__count">9,2</span></div>
+            </div>
           </li>
-          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-3.webp" type="image/webp"><img src="static/images/content/catalog/hotel-3.jpg" alt="Desert Quail Inn"></picture>
+          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-3.webp" type="image/webp"><img class="total__img" src="static/images/content/catalog/hotel-3.jpg" alt="Desert Quail Inn"></picture>
             <div class="total__inner-wrap">
               <h3 class="total__title">Desert Quail Inn</h3>
               <p class="total__price"><span>Гостиница</span><span>от 2500</span></p><a class="total__link total__link--more button" href="#">Подробнее</a>
               <button class="button total__link total__link--favorite" type="button">В избранное</button>
             </div>
-            <p class="total__raiting raiting"><span class="visually-hidden">3 звезды</span><span>Рейтинг:</span><span class="raiting__count">6,9</span></p>
+            <div class="total__raiting raiting">
+              <div class="raiting__stars"><span class="visually-hidden">3 звезды</span></div>
+              <div class="raiting__count"><span>Рейтинг:</span><span class="raiting__count">6,9</span></div>
+            </div>
           </li>
-          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-4.webp" type="image/webp"><img src="static/images/content/catalog/hotel-4.jpg" alt="GreenTree Inn"></picture>
+          <li class="gallery__item total"><picture><source srcset="static/images/content/catalog/hotel-4.webp" type="image/webp"><img class="total__img" src="static/images/content/catalog/hotel-4.jpg" alt="GreenTree Inn"></picture>
             <div class="total__inner-wrap">
               <h3 class="total__title">GreenTree Inn</h3>
               <p class="total__price"><span>Гостиница</span><span>от 1500</span></p><a class="total__link total__link--more button" href="#">Подробнее</a>
               <button class="button total__link total__link--favorite" type="button">В избранное</button>
             </div>
-            <p class="total__raiting raiting"><span class="visually-hidden">2 звезды</span><span>Рейтинг:</span><span class="raiting__count">5,0</span></p>
+            <div class="total__raiting raiting">
+              <div class="raiting__stars"><span class="visually-hidden">2 звезды</span></div>
+              <div class="raiting__count"><span>Рейтинг:</span><span class="raiting__count">5,0</span></div>
+            </div>
           </li>
         </ul>
       </section>
@@ -145,19 +157,16 @@
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" placeholder="Ваш e-mail" name="subscribe-email">
+          <input class="subscribe__input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
           <button class="subscribe__btn button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="footer">
       <ul class="footer__socials socials">
-        <li class="socials__item socials__item--vk"><a href="https://vk.com/htmlacademy" target="blank">
-            <div class="socials__icon socials__icon--vk"></div><span class="visually-hidden">Ссылка Вконтакте</span></a></li>
-        <li class="socials__item socials__item--tg"><a href="https://t.me/htmlacademy" target="blank">
-            <div class="socials__icon socials__icon--tg"></div><span class="visually-hidden">Ссылка Телеграмм</span></a></li>
-        <li class="socials__item socials__item--yt"><a href="https://www.youtube.com/user/htmlacademyru" target="blank" title="Ссылка Youtube">
-            <div class="socials__icon socials__icon--yt"></div><span class="visually-hidden">Ссылка YouTube</span></a></li>
+        <li class="socials__item socials__item--vk"><a class="socials__link" href="https://vk.com/htmlacademy" target="blank"><span class="visually-hidden">Ссылка Вконтакте</span></a></li>
+        <li class="socials__item socials__item--tg"><a class="socials__link" href="https://t.me/htmlacademy" target="blank"><span class="visually-hidden">Ссылка Телеграмм</span></a></li>
+        <li class="socials__item socials__item--yt"><a class="socials__link" href="https://www.youtube.com/user/htmlacademyru" target="blank" title="Ссылка Youtube"><span class="visually-hidden">Ссылка YouTube</span></a></li>
       </ul>
       <adress class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></adress>
       <adress class="footer__autor"><a href="https://htmlacademy.ru/"><picture><source srcset="static/images/beauty/footer/logo-htmlacademy.webp" type="image/webp"><img src="static/images/beauty/footer/logo-htmlacademy.png" alt="Логотип автора проекта - html academy"></picture></a></adress>
