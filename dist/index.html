@@ -5,22 +5,24 @@
     <title>Sedona_OlgaArbuzova Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260219002949">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260224202622">
   </head>
   <body class="wrapper">
     <header class="header"><a href="index.html"><img class="header__logo" src="static/images/beauty/header/logo.svg" alt="Логотип компании Sedona"></a>
       <nav class="header__main-menu">
         <ul class="header__menu menu-header">
-          <li class="menu-header__item"><a class="menu-header__link" href="index.html">Главная</a></li>
+          <li class="menu-header__item"><a class="menu-header__link current-page" href="/index.html">Главная</a></li>
           <li class="menu-header__item"><a class="menu-header__link" href="#">О Седоне</a></li>
-          <li class="menu-header__item"><a class="menu-header__link" href="catalog.html">Гостиницы</a></li>
+          <li class="menu-header__item"><a class="menu-header__link" href="/catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="header__personal personal-header">
+          <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
+          <li class="personal-header__item personal-header__item--favorite"><span class="visually-hidden">Количество гостиниц в избранном:</span><span class="personal-header__count"></span><a class="personal-header__favorite-link" href="#"></a></li>
+          <li class="personal-header__item personal-header__item--btn">
+            <button class="personal-header__active-button button button--brown" href="#" type="button">Хочу сюда!</button>
+          </li>
         </ul>
       </nav>
-      <ul class="header__personal personal-header">
-        <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
-        <li class="personal-header__item personal-header__item--favorite"><span class="visually-hidden">Количество гостиниц в избранном:</span><span class="personal-header__count"></span><a class="personal-header__favorite-link" href="#"></a></li>
-        <li class="personal-header__item"><a class="personal-header__active-button button" href="#">Хочу сюда!</a></li>
-      </ul>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
@@ -97,7 +99,7 @@
       </section>
       <section class="action">
         <h2 class="action__title">Заинтересовались?</h2>
-        <p class="action__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p><a class="action__link button" href="#">Поиск гостиницы в Седоне</a>
+        <p class="action__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p><a class="action__link button button--brown" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <div class="inner-wrapper">
         <section class="subscribe">
@@ -105,7 +107,7 @@
           <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="subscribe__input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
-            <button class="subscribe__btn button" type="submit">Подписаться</button>
+            <button class="subscribe__btn button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
       </div>
@@ -119,5 +121,6 @@
       <adress class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></adress>
       <adress class="footer__autor"><a href="https://htmlacademy.ru/"><picture><source srcset="static/images/beauty/footer/logo-htmlacademy.webp" type="image/webp"><img src="static/images/beauty/footer/logo-htmlacademy.png" alt="Логотип автора проекта - html academy"></picture></a></adress>
     </footer>
+    <script src="static/js/app.min.js?_v=20260224202622"></script>
   </body>
 </html>

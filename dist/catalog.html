@@ -5,22 +5,24 @@
     <title>Sedona_OlgaArbuzova Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260219002949">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260224202622">
   </head>
   <body class="wrapper">
     <header class="header"><a href="index.html"><img class="header__logo" src="static/images/beauty/header/logo.svg" alt="Логотип компании Sedona"></a>
       <nav class="header__main-menu">
         <ul class="header__menu menu-header">
-          <li class="menu-header__item"><a class="menu-header__link" href="index.html">Главная</a></li>
+          <li class="menu-header__item"><a class="menu-header__link" href="/index.html">Главная</a></li>
           <li class="menu-header__item"><a class="menu-header__link" href="#">О Седоне</a></li>
-          <li class="menu-header__item"><a class="menu-header__link" href="catalog.html">Гостиницы</a></li>
+          <li class="menu-header__item"><a class="menu-header__link current-page" href="/catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="header__personal personal-header">
+          <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
+          <li class="personal-header__item personal-header__item--favorite"><span class="visually-hidden">Количество гостиниц в избранном:</span><span class="personal-header__count"></span><a class="personal-header__favorite-link" href="#"></a></li>
+          <li class="personal-header__item personal-header__item--btn">
+            <button class="personal-header__active-button button button--brown" href="#" type="button">Хочу сюда!</button>
+          </li>
         </ul>
       </nav>
-      <ul class="header__personal personal-header">
-        <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
-        <li class="personal-header__item personal-header__item--favorite"><span class="visually-hidden">Количество гостиниц в избранном:</span><span class="personal-header__count"></span><a class="personal-header__favorite-link" href="#"></a></li>
-        <li class="personal-header__item"><a class="personal-header__active-button button" href="#">Хочу сюда!</a></li>
-      </ul>
     </header>
     <main class="catalog">
       <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
@@ -63,15 +65,18 @@
             <div class="form-choise__price-wrapper">
               <h4 class="form-choise__subtitle">Стоимость, ₽:</h4>
               <p class="form-choise__price">
-                <input type="text" placeholder="от" value="0" name="price-from">
-                <input type="text" placeholder="до" value="9000" name="price-after">
+                <input class="form-choise__input form-choise__input--before" type="text" placeholder="от" value="0" name="price-from">
+                <input class="form-choise__input form-choise__input--after" type="text" placeholder="до" value="9000" name="price-after">
               </p>
-              <p class="form-choise__price-range">
-                <input type="range" id="range" min="0" max="9000" step="500" value="7000">
-              </p>
+              <div class="form-choise__price-range range">
+                <div class="range__slider range__slider--min"> </div>
+                <div class="range__slider range__slider--max"> </div>
+                <div class="range__progress"> </div>
+                <div class="range__background">         </div>
+              </div>
             </div>
             <div class="form-choise__button-wrapper">
-              <button class="button form-choise__button" type="submit">Применить</button>
+              <button class="button form-choise__button button button--blue" type="submit">Применить</button>
               <button class="form-choise__button--reset" type="reset">Сбросить</button>
             </div>
           </div>
@@ -86,7 +91,7 @@
           <option value="Сначала популярные">Сначала популярные</option>
         </select>
         <ul class="filter-result__view view-list">
-          <li class="view-list__item"><a class="view-list__link" href="#"><img src="static/images/icons/view-tile.svg" alt="отбражение плитками"></a></li>
+          <li class="view-list__item view-list__item--current"><a class="view-list__link" href="#"><img src="static/images/icons/view-tile.svg" alt="отбражение плитками"></a></li>
           <li class="view-list__item"><a class="view-list__link" href="#"><img src="static/images/icons/view-icon.svg" alt="отбражение по одному объекту"></a></li>
           <li class="view-list__item"><a class="view-list__link" href="#"><img src="static/images/icons/view-list.svg" alt="отображение списком"></a></li>
         </ul>
@@ -158,7 +163,7 @@
         <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="subscribe__input" type="email" placeholder="Ваш e-mail" name="subscribe-email">
-          <button class="subscribe__btn button" type="submit">Подписаться</button>
+          <button class="subscribe__btn button button--blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -171,5 +176,6 @@
       <adress class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></adress>
       <adress class="footer__autor"><a href="https://htmlacademy.ru/"><picture><source srcset="static/images/beauty/footer/logo-htmlacademy.webp" type="image/webp"><img src="static/images/beauty/footer/logo-htmlacademy.png" alt="Логотип автора проекта - html academy"></picture></a></adress>
     </footer>
+    <script src="static/js/app.min.js?_v=20260224202622"></script>
   </body>
 </html>
