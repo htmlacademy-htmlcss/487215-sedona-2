@@ -5,7 +5,7 @@
     <title>Sedona_OlgaArbuzova Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260315132847">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?_v=20260315222856">
     <link rel="icon" href="static/images/icons/favicon.png" type="image/png">
   </head>
   <body>
@@ -15,7 +15,7 @@
           <ul class="header__menu menu-header">
             <li class="menu-header__item"><a class="menu-header__link" href="index.html">Главная</a></li>
             <li class="menu-header__item"><a class="menu-header__link" href="#">О Седоне</a></li>
-            <li class="menu-header__item"><a class="menu-header__link current-page" href="catalog.html">Гостиницы</a></li>
+            <li class="menu-header__item"><a class="menu-header__link  current-page" href="#">Гостиницы</a></li>
           </ul>
           <ul class="header__personal personal-header">
             <li class="personal-header__item personal-header__item--search"><span class="visually-hidden">Поиск</span><a class="personal-header__search-link" href="#"></a></li>
@@ -99,9 +99,9 @@
             <option value="Сначала популярные">Сначала популярные</option>
           </select>
           <ul class="filter-result__view view-list">
-            <li class="view-list__item view-list__item--current"><a class="view-list__link" href="#"><img src="static/images/icons/view-icon.svg" alt="отбражение плитками"></a></li>
-            <li class="view-list__item"><a class="view-list__link" href="#"><img src="static/images/icons/view-tile.svg" alt="отбражение по одному объекту"></a></li>
-            <li class="view-list__item"><a class="view-list__link" href="#"><img src="static/images/icons/view-list.svg" alt="отображение списком"></a></li>
+            <li class="view-list__item view-list__item--current"><a class="view-list__link" href="catalog.html?view=tile"><img src="static/images/icons/view-icon.svg" alt="отбражение плитками"></a></li>
+            <li class="view-list__item"><a class="view-list__link" href="catalog.html?view=card"><img src="static/images/icons/view-tile.svg" alt="отбражение по одному объекту"></a></li>
+            <li class="view-list__item"><a class="view-list__link" href="catalog.html?view=list"><img src="static/images/icons/view-list.svg" alt="отображение списком"></a></li>
           </ul>
         </section>
         <section class="gallery">
@@ -162,7 +162,7 @@
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
           <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe__submit-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="subscribe__input subscribe__input--catalog" type="email" placeholder="Ваш e-mail" name="subscribe-email">
+            <input class="subscribe__input subscribe__input--catalog" type="email" placeholder="Ваш e-mail" name="subscribe-email" required>
             <button class="subscribe__btn button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
@@ -221,6 +221,6 @@
         </div>
       </section>
     </div>
-    <script src="static/js/app.min.js?_v=20260315132847"></script>
+    <script src="static/js/app.min.js?_v=20260315222856"></script>
   </body>
 </html>
