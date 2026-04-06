@@ -55,7 +55,7 @@
     color:rgba(255,255,255,.3)
 }
 .button:disabled{
-    background-color:#f5f5f5;
+    background-color:#e5e5e5;
     cursor:default
 }
 @font-face{
@@ -223,7 +223,7 @@ body{
     opacity:.5
 }
 .form-choise__button--reset:disabled{
-    background-color:#f5f5f5;
+    background-color:#e5e5e5;
     cursor:default;
     border-radius:4px
 }
