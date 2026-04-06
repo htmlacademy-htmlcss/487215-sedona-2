@@ -1226,16 +1226,19 @@ body{
 }
 .modal__next-btn{
     background:url(../images/icons/plus.svg);
+    background-position:25% 50%;
 }
 .modal__next-btn:hover{
     background:url(../images/icons/plus-black.svg);
     background-repeat:no-repeat;
-    background-position:50% 50%;
+    background-position:25% 50%;
     background-color:#e5e5e5;
+}
+.modal__prev-btn{
+  background-position:50% 50%;
 }
 .modal__next-btn, .modal__prev-btn{
     border:none;
-    background-position:50% 50%;
     background-repeat:no-repeat;
 }
 .modal__next-btn:hover, .modal__prev-btn:hover{
