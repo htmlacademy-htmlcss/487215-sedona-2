@@ -1287,9 +1287,13 @@ body{
     border-radius:10px;
     color:#ffffff;
     width:256px;
-    padding:18px;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
+    padding: 19px 20px 24px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    top: -3px;
 }
 .hint__description:after{
     content:"";
@@ -1303,6 +1307,7 @@ body{
     height:0;
     width:0;
     border-bottom-color:#000000;
+    top:-3px;
 }
 .subscribe{
     min-height:415px;
