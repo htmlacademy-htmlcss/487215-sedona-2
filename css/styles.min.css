@@ -1407,6 +1407,10 @@ body{
 .subscribe__input--catalog{
     background-color:#f2f2f2;
 }
+.subscribe__input--catalog:hover
+{
+   background-color:#e5e5e5;
+}
 .inner-wrapper{
     background:#5094c1 url(../images/content/index/subscribe.jpg);
     background-size:cover;
