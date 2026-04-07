@@ -642,8 +642,7 @@ body{
 .pagination__item:hover:not(.pagination__item--dots):not(.pagination__item--current){
     background-color:#69a4ca;
 }
-.pagination__item:active{
-  background-color: #82b3d3;
+.pagination__item>a:active{
   color: rgba(255, 255, 255, 0.3);
 }
 .pagination__item--current{
