@@ -1397,6 +1397,9 @@ body{
     border:none;
     outline:0;
 }
+.inner-wrapper .subscribe__input--catalog{
+    background-color:#ffffff;
+}
 .subscribe__input--catalog{
     background-color:#f2f2f2;
 }
@@ -1416,9 +1419,7 @@ body{
     background-size:cover;
     color:#ffffff;
 }
-.inner-wrapper .subscribe__input--catalog{
-    background-color:#ffffff;
-}
+
 .about{
     margin-bottom:94px;
 }
