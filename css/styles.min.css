@@ -415,7 +415,7 @@ body{
     right:60px;
 }
 .range__button:hover{
-    box-shadow:20px 0px 10px -5px #333333;
+    box-shadow:10px 0px 10px -5px #333333;
 }
 .range__button:active, .range__button:focus{
     background-color:#afafaf;
