@@ -360,6 +360,21 @@ body{
     box-sizing:border-box;
     font-size:18px;
 }
+.form-choise__input:hover{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:0;
+    border:none;
+    background-color:#e5e5e5;
+}
+.form-choise__input:focus{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border:none;
+    outline:2px solid #68a2ca;
+}
 .form-choise__input:disabled{
     opacity:0.4;
 }
@@ -400,8 +415,7 @@ body{
     right:60px;
 }
 .range__button:hover{
-    background-color:#cecece;
-    box-shadow:0 0 15px 0 #333333;
+    box-shadow:10px 0px 10px -5px #333333;
 }
 .range__button:active, .range__button:focus{
     background-color:#afafaf;
@@ -627,6 +641,9 @@ body{
 }
 .pagination__item:hover:not(.pagination__item--dots):not(.pagination__item--current){
     background-color:#69a4ca;
+}
+.pagination__item>a:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 .pagination__item--current{
     background-color:#f2f2f2;
@@ -1196,6 +1213,7 @@ body{
     background-color:#f2f2f2;
     padding-left: 15px;
     padding-top: 2px;
+    font-family: pt_sans;
 }
 .modal__count-wrapper>input:active, .modal__count-wrapper>input:checked, .modal__count-wrapper>input:focus{
     border:none;
@@ -1208,6 +1226,7 @@ body{
 .modal__count-item{
     -ms-flex-preferred-size:30%;
     flex-basis:30%;
+    font-family: pt_sans;
 }
 .modal__count-item:hover{
     background-color:#e5e5e5;
@@ -1311,7 +1330,7 @@ body{
     height:0;
     width:0;
     border-bottom-color:#000000;
-    top:-24px;
+    top:-23px;
 }
 .subscribe{
     min-height:415px;
@@ -1396,23 +1415,29 @@ body{
     border:none;
     outline:0;
 }
+.inner-wrapper .subscribe__input--catalog{
+    background-color:#ffffff;
+}
+.subscribe__input--catalog{
+    background-color:#f2f2f2;
+}
 .subscribe__input:hover{
     background-color:#e5e5e5;
 }
 .subscribe__input:focus{
     outline:2px solid #83b3d3;
 }
-.subscribe__input--catalog{
-    background-color:#f2f2f2;
+
+.subscribe__input--catalog:hover
+{
+   background-color:#e5e5e5;
 }
 .inner-wrapper{
     background:#5094c1 url(../images/content/index/subscribe.jpg);
     background-size:cover;
     color:#ffffff;
 }
-.inner-wrapper .subscribe__input--catalog{
-    background-color:#ffffff;
-}
+
 .about{
     margin-bottom:94px;
 }
