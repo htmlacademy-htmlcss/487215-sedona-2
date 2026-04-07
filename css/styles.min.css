@@ -360,6 +360,21 @@ body{
     box-sizing:border-box;
     font-size:18px;
 }
+.form-choise__input:hover{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:0;
+    border:none;
+    background-color:#e5e5e5;
+}
+.form-choise__input:focus{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border:none;
+    outline:2px solid #68a2ca;
+}
 .form-choise__input:disabled{
     opacity:0.4;
 }
